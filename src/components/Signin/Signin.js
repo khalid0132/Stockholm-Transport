@@ -15,6 +15,7 @@ const Signin = () => {
     let history = useHistory();
     let location = useLocation();
     let { from } = location.state || { from: { pathname: "/" } };
+    
     const [signInUser, setSignInUser] = useState({});
     var provider = new firebase.auth.GoogleAuthProvider();
     var ghProvider = new firebase.auth.GithubAuthProvider();

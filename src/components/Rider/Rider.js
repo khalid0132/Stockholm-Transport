@@ -6,7 +6,7 @@ const Rider = ({ride}) => {
     console.log(ride)
     const {imgUrl, rideType} = ride;
     const history = useHistory()
-    const handleBook = (rideType) => {
+    const handleBook = (ride) => {
         history.push(`/book/${rideType}`);
     }
     // const handleBook = () =>{
@@ -14,7 +14,7 @@ const Rider = ({ride}) => {
     // }
     return (
         <div onClick={handleBook} className="ride-design">
-            {/* <h1>Rider is here</h1> */}
+            
             <img src={imgUrl} alt=""/>
             <h3>{rideType}</h3>
             
