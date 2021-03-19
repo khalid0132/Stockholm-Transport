@@ -16,7 +16,7 @@ img {
 }
 .header{
     text-align: center;
-    background: url('banner.jpg') no-repeat center/cover;
+    /* background: url('banner.jpg') no-repeat center/cover; */
 }
 .header img {
     height: 80px;

@@ -7,8 +7,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         
-    <div >
-        <Container className="header">
+    <div className="header">
           {/* <Nav defaultActiveKey="/home" as="ul">
         <Nav.Item as="li">
             <Nav.Link href="/home">Active</Nav.Link>
@@ -22,7 +21,7 @@ const Header = () => {
         </Nav> */}
 
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg ">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Stockholm SL</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,7 +68,7 @@ const Header = () => {
       
       </nav> */}
       
-    </Container>
+  
         
         </div>
         

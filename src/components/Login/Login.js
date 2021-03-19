@@ -35,7 +35,7 @@ const Login = () => {
                 <p><input type="text" placeholder =" Name" /></p>
                 <p><input type="text" placeholder ="Username or Email" required/></p>
                 <p><input type="password" placeholder="password" required/></p>
-                <p><input type="password" placeholder="Confirm password"/></p>
+                <p><input type="password" placeholder="Confirm password" required/></p>
                 <p><input className="d-grid col-8 mx-auto btn btn-primary" type="submit" value="Create an account"/></p>
             </form>
             <p>Already have an account? <Link to="/signin">Login</Link></p>
