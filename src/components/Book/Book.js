@@ -10,9 +10,9 @@ import './Book.css';
 const Book = () => {
     // const ride = useParams()
     // const {price, rideType} = ride;
-    const {price, rideType} = useContext(UserContext);
+    const {price, rideType, imgUrl} = useContext(UserContext);
     const history = useHistory();
-    const handleCheckOut= () =>{
+    const handleCheckOut= ({rideType}) =>{
         history.push('/checkout');
     }
     return (
@@ -25,7 +25,7 @@ const Book = () => {
                         <p ><input className="text-center" type="text" placeholder="Stockholm central"/></p>
                         <p>Pick To</p>
                         <p><input className="text-center" type="text" placeholder="Södertälje"/></p>
-                        <button onClick={handleCheckOut} className="d-grid col-8 mx-auto btn btn-primary">Search</button>
+                        <button onClick={()=>handleCheckOut ({rideType})} className="d-grid col-8 mx-auto btn btn-primary">Search</button>
                     </form>
                 </div>
                 <div className="col-9">

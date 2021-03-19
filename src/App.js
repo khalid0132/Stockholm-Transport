@@ -41,9 +41,9 @@ function App() {
           <PrivateRoute path = "/book/:rideType">
             <Book></Book>
           </PrivateRoute>
-          <Route path="/checkout">
+          <PrivateRoute path="/checkout">
             <CheckOut/>
-          </Route>
+          </PrivateRoute>
             <Route exact path ="/">
             <Home></Home>
           </Route>
