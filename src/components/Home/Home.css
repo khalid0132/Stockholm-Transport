@@ -1,0 +1,8 @@
+.header-top{
+    background: url('banner.jpg') no-repeat center/cover; 
+    height: 800px;
+    z-index: -1;
+}
+.rider{
+    z-index: 1;
+}
