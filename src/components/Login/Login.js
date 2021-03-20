@@ -139,7 +139,27 @@ const Login = () => {
     const [signInUser, setSignInUser] = useContext(UserContext);
     var provider = new firebase.auth.GoogleAuthProvider();
     var ghProvider = new firebase.auth.GithubAuthProvider();
+    // var fbProvider = new firebase.auth.FacebookAuthProvider();
 
+    // const handleFacebook = () => {
+    //         firebase
+    //     .auth()
+    //     .signInWithPopup(fbProvider)
+    //     .then((result) => {
+    //       var {displayName, email} = result.user;
+    //       // console.log(displayName, email);
+    //       const signedWithFacebook = {displayName, email}
+    //       setSignInUser(signedWithFacebook);
+    //       history.replace(from);
+    //     })
+    //     .catch((error) => {
+    //       var errorMessage = error.message;
+    //       console.log(errorMessage);
+    //     });
+    // }
+
+
+    //Google login
     const handleGoogle = () =>{
       
         firebase.auth()
@@ -155,25 +175,23 @@ const Login = () => {
         console.log(errorMessage);
       });
     }
-    // signInUser.email(() => {
-    //   history.replace(from);
-    // });
 
+// Github login
     const handleGitHub = () => {
       firebase
-  .auth()
-  .signInWithPopup(ghProvider)
-  .then((result) => {
-    var {displayName, email} = result.user;
-    const signedWithGitHub = {displayName, email};
-    setSignInUser(signedWithGitHub);
-    history.replace(from);
-    
-  }).catch((error) => {
-    var errorMessage = error.message;
-    console.log(errorMessage);
-    
-  });
+      .auth()
+      .signInWithPopup(ghProvider)
+      .then((result) => {
+        var {displayName, email} = result.user;
+        const signedWithGitHub = {displayName, email};
+        setSignInUser(signedWithGitHub);
+        history.replace(from);
+        
+      }).catch((error) => {
+        var errorMessage = error.message;
+        console.log(errorMessage);
+        
+      });
     }
     // signInUser.email(() => {
     //   history.replace(from);
@@ -207,7 +225,8 @@ const Login = () => {
         <div className="register-google">
             <p>----------or----------</p>
             <button className="google-btn" onClick={handleGoogle}> Continue with google</button><br/>
-            <button className="google-btn mt-2" onClick={handleGitHub}>Continue with GitHub</button>
+            <button className="google-btn" onClick={handleGitHub}>Continue with GitHub</button><br/>
+            {/* <button className="google-btn" onClick={handleFacebook}>Continue with Facebook</button> */}
             <p>{signInUser.displayName}</p>
             <p>{signInUser.email}</p>
         </div>

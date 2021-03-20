@@ -66,8 +66,8 @@ const Signin = () => {
         </div>
         <div className="register-google">
             <p>----------or----------</p>
-            <button className="google-btn" onClick={handleGoogle}>Continue with google</button>
-            <button className="google-btn mt-2" onClick={handleGitHub}>Continue with GitHub</button>
+            <button className="google-btn" onClick={handleGoogle}>Continue with google</button><br/>
+            <button className="google-btn" onClick={handleGitHub}>Continue with GitHub</button>
             <p>{signInUser.displayName}</p>
             <p>{signInUser.email}</p>
         </div>
