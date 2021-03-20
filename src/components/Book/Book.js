@@ -1,6 +1,6 @@
 // import { Button } from 'bootstrap';
 import React, { useContext } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+// import { Col, Container, Row } from 'react-bootstrap';
 import { useHistory, useParams } from 'react-router';
 import { UserContext } from '../../App';
 import GoogleMap from '../GoogleMap/GoogleMap';
@@ -23,11 +23,11 @@ const Book = () => {
                 <div className="col-3 ">
                 <form action="" className="book-destination">
                     
-                        <p>By {rideType}  Pick From: </p>
+                        <p>med {rideType},  Hämta från: </p>
                         <p ><input className="text-center" type="text" placeholder="Stockholm central"/></p>
-                        <p>Pick To: {imgUrl}</p>
+                        <p>Lamna till: {imgUrl}</p>
                         <p><input className="text-center" type="text" placeholder="Södertälje"/></p>
-                        <button onClick={handleCheckOut} className="d-grid col-8 mx-auto btn btn-primary">Search</button>
+                        <button onClick={handleCheckOut} className="d-grid col-8 mx-auto btn btn-primary">Sök</button>
                     </form>
                 </div>
                 <div className="col-9">

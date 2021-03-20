@@ -4,7 +4,11 @@ import './Login.css';
 import firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from './firebase.config';
-import {UserContext} from '../../App'
+import {UserContext} from '../../App';
+
+// import { fab } from '@fortawesome/free-brands-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 if(firebase.apps.length === 0){
     firebase.initializeApp(firebaseConfig);
@@ -202,7 +206,7 @@ const Login = () => {
         </div>
         <div className="register-google">
             <p>----------or----------</p>
-            <button className="google-btn" onClick={handleGoogle}>Continue with google</button><br/>
+            <button className="google-btn" onClick={handleGoogle}> Continue with google</button><br/>
             <button className="google-btn mt-2" onClick={handleGitHub}>Continue with GitHub</button>
             <p>{signInUser.displayName}</p>
             <p>{signInUser.email}</p>

@@ -4,17 +4,18 @@ import { useParams } from 'react-router';
 import GoogleMap from '../GoogleMap/GoogleMap';
 import './CheckOut.css'
 
-const CheckOut = (props) => {
-    const {price, imgUrl, rideType} = useParams();
+const CheckOut = () => {
+    const {ride} = useParams();
+    const {rideType, price, imgUrl} = {ride};
     return (
         <div>
             <div className ="container">
             <div className="row mt-5">
                 <div className="col-3 check-out">
                     <h3>
-                        Welcome to your destination!!!  {rideType} {price} {imgUrl}
+                    Välkommen till din destination!!!  {rideType} {price} {imgUrl}
                     </h3>
-                    <h3>Have a nice trip!</h3>
+                    <h3>Ha en trevlig resa!!</h3>
                 {/* <form action="" className="book-destination">
                         <FormLabel>Stockholm:{price} </FormLabel>
                         <p ><input className="text-center" type="text" placeholder="Stockholm central"/></p>

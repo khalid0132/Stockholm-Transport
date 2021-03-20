@@ -23,26 +23,26 @@ const Header = () => {
 
 <nav class="navbar navbar-expand-lg ">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Stockholm SL</a>
+    <a class="navbar-brand" href="#">Stockholms Lokaltraffik (SL)</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
         <li class="nav-item">
-          <Link to="/home">Home</Link>
+          <Link to="/home">Hem</Link>
         </li>
         <li class="nav-item">
           <Link to="/destination">Destination</Link>
         </li>
         <li class="nav-item">
-          <Link to="/blog">Blog</Link>
+          <Link to="/blog">Blogg</Link>
         </li>
         <li class="nav-item">
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact">Kontakt</Link>
         </li>
         <li class="nav-item">
-          <Link to="/login">Login</Link>
+          <Link to="/login">Logga in</Link>
         </li>
         {/* <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
