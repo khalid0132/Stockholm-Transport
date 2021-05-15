@@ -16,7 +16,7 @@ const Header = () => {
 
         <nav className='navbar navbar-expand-lg navbar-light bg-info fw-bold'>
                 <div className='container'>
-                    <Link to='/' className='navbar-brand fs-3 text-uppercase'>Stockholm's Transportation (ST)</Link>
+                    <Link to='/' className='navbar-brand fs-3 text-uppercase fw-600'>Stockholm's Transportation (ST)</Link>
                     <button className='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
                         <span className='navbar-toggler-icon'></span>
                     </button>
